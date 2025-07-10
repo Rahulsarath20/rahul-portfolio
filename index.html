@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Rahul | Full Stack Developer</title>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  <header>
+    <a href="#" class="logo">My Portfolio</a>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#Education">Education</a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-img">
+      <img src="images/rahul.png" alt="Rahul's Photo">
+    </div>
+    <div class="home-content">
+      <h1>Hi, I'm <span>Rahul</span></h1>
+      <h3 class="typing-text"> <span id="typing">Full Stack Developer</span></h3>
+      <p>
+        I'm a passionate Python full stack developer skilled in Django, MySQL, HTML, CSS, JavaScript, and Bootstrap.
+        I also work with Power BI and Excel for data cleaning and dashboard creation. I love building clean, efficient
+        web applications and visualizing data in a meaningful way.
+      </p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/rahulsarath/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Rahulsarath20" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <a href="my_resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </section>
+
+  <section id="skills" class="section fade-in">
+    <h1>Skills</h1>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fab fa-python"></i>
+        <p>Python</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-code"></i>
+        <p>Django</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-html5"></i>
+        <p>HTML / CSS / JS</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-database"></i>
+        <p>MySQL</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-github"></i>
+        <p>Git & GitHub</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-chart-bar"></i>
+        <p>Power BI</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-file-excel"></i>
+        <p>Excel (Data Cleaning)</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-bootstrap"></i>
+        <p>Bootstrap</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section fade-in">
+    <h1>Projects</h1>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>🏬 Sportify| E-Commerce App</h3>
+        <p class="tech">Django · MySQL · Bootstrap</p>
+        <p>Sports shopping platform with cart, wishlist, login, and admin panel features.</p>
+        <a href="https://github.com/Rahulsarath20/sportify" class="btn" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>📊 Power BI Sales Dashboard</h3>
+        <p class="tech">Power BI · Excel · Data Cleaning</p>
+        <p>Interactive sales dashboard with KPIs, filters, and regional breakdown. Built using Power BI from cleaned Excel data.</p>
+        <a href="https://yourdashboardlink" class="btn" target="_blank">View Dashboard</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+    <div class="contact-box">
+      <p><i class="fas fa-phone"></i>Call: <a href="tel:+91 6369165361">91 6369165361</a></p>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:rahulsarath18@example.com">rahulsarath18@example.com</a></p>
+      <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/rahulsarath" target="_blank">linkedin.com/in/rahulsarath</a></p>     
+    </div>
+  </section>
+
+  <section id="Education">
+    <h2 class="section-title">Education</h2>
+    <div class="Education-box">
+       <h3>Bachelor Degree Engineering </h3>
+       <p>
+          Completed my Bachelor degree in Computer Science
+          - Tamilnadu college of Engineering,Coimbatore 
+          Cgpa is 7.2
+       </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rahul Sarath</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Particle.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script>
+  tsParticles.load("particles-js", {
+    background: {
+      color: {
+        value: "transparent"
+      }
+    },
+    particles: {
+      number: {
+        value: 60,
+        density: {
+          enable: true,
+          value_area: 800
+        }
+      },
+      shape: {
+        type: "char",
+        character: {
+          value: ["0", "1"],
+          font: "Arial",
+          style: "",
+          weight: "400",
+          fill: true
+        }
+      },
+      color: {
+        value: "#b74b4b"
+      },
+      size: {
+        value: 14,
+        random: {
+          enable: true,
+          minimumValue: 10
+        }
+      },
+      move: {
+        enable: true,
+        speed: 0.8,
+        direction: "right",
+        random: false,
+        straight: true,
+        out_mode: "out"
+      },
+      opacity: {
+        value: 0.6,
+        random: true
+      }
+    },
+    retina_detect: true
+  });
+</script>
+
+</body>
+</html>
